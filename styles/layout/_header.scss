@@ -1,0 +1,97 @@
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+    width: 90vw;
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    .course {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        img {
+            width: 30px;
+        }
+    }
+    .burger {
+        height: 21px;
+        width: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            height: 4px;
+            width: 100%;
+            background-color: #3a3a3a;
+            border-radius: 10px;
+        }
+        &:hover div {
+            background-color: #ffb606;
+        }
+    }
+    .links {
+        display: none;
+    }
+    .phone {
+        display: none
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .header {
+        height: 100px;
+        padding: 0 0 0 40px;
+        width: 1200px;
+        top: 40px;
+        .course {
+            img {
+            width: 50px;
+            } 
+        }
+        .burger {
+        display: none;
+        }
+        .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 600px;
+        a {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #3a3a3a;
+            font-size: 14px;
+            text-decoration: none;
+            &:hover {
+                color: #ffb606;
+            }
+        }
+        }
+        .bold {
+            font-size: 30px;
+        }
+        .phone {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            background-color: #ffb606;
+            height: 100%;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0 30px;
+            font-size: 17px;
+        }
+    }
+}
+
+
+
+

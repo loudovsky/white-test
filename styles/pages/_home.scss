@@ -1,0 +1,58 @@
+.education {
+    background: url(../images/slider_background.jpg) center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .yellow {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        mark {
+            color: white;
+            background-color: #ffb606;
+        }
+    }
+}
+
+.rectangles {
+    height: 500px;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        .rectangle {
+            background-color: #1a1a1a;
+            padding: 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            &:hover {
+                background-color: #ffb606;
+                img {
+                    filter: brightness(100);
+                }
+            }
+            img {
+                width: 60px;
+            }
+            h2, .view {
+                color: #fff;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                margin: 0;
+            }
+            .view {
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 12px;
+                text-decoration: none;
+                margin-top: 10px;
+            }
+        }
+    }
+}
