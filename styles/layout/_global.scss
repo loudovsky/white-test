@@ -159,3 +159,34 @@ button {
         width: 30px;
     }
 }
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+        width: 25px;
+    }
+    p {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .education .yellow {
+        font-size: 52px;
+    }
+    .main.wrapper {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /*.main.wrapper {
+        width: 90vw;
+    }*/
+    .courses {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px 30px;
+    }
+}

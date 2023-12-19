@@ -65,15 +65,6 @@ footer {
             color: #ffb606;
             @include transition;
         }
-        .contact {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            img {
-                width: 25px;
-            }
-
-        }
     }
     .sections {
         position: relative;
@@ -118,6 +109,45 @@ footer {
                     @include transition;
                     color: #ffb606;
                 }
+            }
+        }
+    }
+    @media screen and (min-width: 600px) {
+        .copyright {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .newsletter {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            button {
+                height: 40px;
+            }
+        }
+        .pen {
+            img {
+                width: 52px;
+            }
+            .bold {
+                font-size: 30px;
+            }
+        }
+        .section:nth-of-type(1) {
+            p {
+                font-size: 14px; 
+            }
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .sections {
+            flex-direction: row;
+            justify-content: space-between;
+            .section:nth-of-type(1) {
+                width: 300px;
             }
         }
     }

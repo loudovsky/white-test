@@ -235,6 +235,8 @@
     padding: 50px 0;
     gap: 50px;
     .event {
+        display: flex;
+        flex-direction: column;
         img {
             width: 100%;
         }
@@ -281,4 +283,40 @@
         }
     }
     
+}
+@media screen and (min-width: 1000px) {
+    .rectangles {
+        height: 216px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+    .services.main.wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .student {
+        background-size: cover;
+        background-position: right;
+    }
+    .events .event {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap:30px;
+        img {
+            width: 350px;
+            order: 3;
+        }
+        .date {
+            order:1;
+            margin: 0;
+        }
+        .text {
+            order:2;
+            width: 500px;
+        }
+    }
 }

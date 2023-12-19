@@ -17,3 +17,9 @@
 .courses.page2 {
     margin-bottom: 100px;
 }
+
+@media screen and (min-width: 600px) {
+    .education.page2_3 {
+        padding-bottom: 75px;
+    }
+}
