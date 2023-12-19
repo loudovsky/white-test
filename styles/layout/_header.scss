@@ -5,19 +5,15 @@
     align-items: center;
     height: 60px;
     padding: 0 10px;
-    width: 90vw;
     position: fixed;
     top: 15px;
     left: 50%;
     transform: translate(-50%, 0);
-    .course {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        img {
-            width: 30px;
-        }
-    }
+    z-index: 2;
+    -webkit-box-shadow: -2px 9px 43px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 9px 43px -11px rgba(0,0,0,0.75);
+    box-shadow: -2px 9px 43px -11px rgba(0,0,0,0.75);
+    
     .burger {
         height: 21px;
         width: 24px;
@@ -30,8 +26,10 @@
             width: 100%;
             background-color: #3a3a3a;
             border-radius: 10px;
+            @include transition;
         }
         &:hover div {
+            @include transition;
             background-color: #ffb606;
         }
     }
@@ -49,7 +47,7 @@
         padding: 0 0 0 40px;
         width: 1200px;
         top: 40px;
-        .course {
+        .pen {
             img {
             width: 50px;
             } 
@@ -69,7 +67,9 @@
             color: #3a3a3a;
             font-size: 14px;
             text-decoration: none;
+            @include transition;
             &:hover {
+                @include transition;
                 color: #ffb606;
             }
         }

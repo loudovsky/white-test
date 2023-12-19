@@ -1,0 +1,19 @@
+.education.page2_3{
+    height: 40vh;
+    margin-bottom: 100px;
+    background-size: 400%;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    .yellow {
+        background-color: #ffb606;
+        padding: 10px 30px;
+    }
+}
+
+.courses.page2 {
+    margin-bottom: 100px;
+}

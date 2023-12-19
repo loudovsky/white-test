@@ -9,6 +9,9 @@ html {
         background: #ffb406ad;
       }
 }
+main {
+    background-color: #f4f4f4;
+}
 .wrapper {
     margin: 0 auto;
 }
@@ -16,12 +19,33 @@ html {
 .main.wrapper {
     width: 90vw;
 }
+.header.wrapper {
+    width: 85vw;
+}
 
 .bold {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     color: #3a3a3a;
+}
+
+.education {
+    background: url(../images/slider_background.jpg) center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .yellow {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        mark {
+            color: white;
+            background-color: #ffb606;
+        }
+    }
 }
 
 h1 {
@@ -46,8 +70,8 @@ h1 {
 
 .courses {
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 80px;
     .course {
         font-family: 'Roboto', sans-serif;
@@ -62,6 +86,11 @@ h1 {
                 color: #000;
                 font-weight: 500;
                 font-size: 20px;
+                @include transition;
+                &:hover {
+                    color: #808080a9;
+                    @include transition;
+                }
             }
             p {
                 color: #808080a9;
@@ -113,9 +142,20 @@ button {
     padding: 15px 40px;
     text-decoration: none;
     text-transform: uppercase;
+    @include transition;
     &:hover {
+        @include transition;
         -webkit-box-shadow: -2px 9px 43px -11px rgba(0,0,0,0.75);
         -moz-box-shadow: -2px 9px 43px -11px rgba(0,0,0,0.75);
         box-shadow: -2px 9px 43px -11px rgba(0,0,0,0.75);
+    }
+}
+
+.pen {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+        width: 30px;
     }
 }
